@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS modified</title>   
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="modified.css">
+        <script src="modified.js"></script>    
+
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="tab tab-1">
+                <table id="table" border="1" style="display: none;">
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Product Cost</th>
+                        <th>Quantity</th>
+                        <th>Sub-Total</th>
+
+                    </tr>
+
+
+                </table>
+                <span id="val"><h1><b></b></h1></span>
+            </div>
+            <div class="tab tab-2" id="div1">
+                <span id="sp1">Product Name: <input type="text" name="prodName" id="prodName"></span>
+                <span id="sp2">Product Cost: <input type="number" name="prodCost" id="prodCost"></span>
+                <span id="sp3">Number: <input type="number" name="prodNbr" id="prodNbr"></span>
+                <button onclick="addHtmlTableRow()">ADD</button>
+                <button onclick="editHtmlTableSelectedRow()">EDIT</button>
+                <button onclick="removeSelectedRow()">REMOVE</button><br>
+                <button onclick="calculateBill()" id="button1">Calculate Bill</button>
+                <button onclick="resetPage()" id="button2">RESET</button>                
+            </div>
+                
+        </div>
+
+    </body>      
+
+</html>   

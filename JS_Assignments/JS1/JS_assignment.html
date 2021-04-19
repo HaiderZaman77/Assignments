@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript Assignment</title>
+    <link rel="stylesheet" href="jsa_style.css">
+    <script src="calculations.js"></script>
+</head>
+<body>
+    <form id="form1">
+        <div id="divS">
+            <label for="fName">Product Name:</label>
+            <input type="text" id="pName" name="pName" required> <br><br>
+            <label for="pCost">Product Price:</label>
+            <input type="text" id="pCost" name="pCost" min="0" required> <br><br>
+            <label for="pNbr">Number(Quantity):</label>
+            <input type="text" id="pNbr" name="pNbr" min="1" step="1" required> <br><br>
+            <p id="p1"></p><br>    
+            <input type="button" id="ADD" onclick="addProduct()"  title="Add New Product" value="Add new Product">
+            <input type="button" id="cal" onclick="calculateBill()" title="Calculate Bill" value="Calculate Bill">
+            <input type="button" id="Reset" onclick="resetValues()" title="Reste All Values" value="Reset Values">
+        </div>
+    </form>
+    <div id="div1">
+        <input type="button" id="button1" onclick="display() " title="Go To Add product Page" value="Add Product">
+    </div>     
+    
+</body>
+</html>    

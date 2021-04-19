@@ -1,0 +1,46 @@
+
+    body {
+       background-color: cadetblue;
+       font-size: x-large;
+
+   }
+   #form1 {
+       align-items: center;
+       margin: 250px 250px;
+
+
+   }
+   #divS {
+       visibility: hidden;
+       margin: auto;
+       text-align: center;
+       text-decoration: black;
+       font-weight: bold;
+       font-variant: normal;
+       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       display: block;
+
+   }
+   #div1 {
+       text-align: center;
+
+
+   }
+   #button1 {
+       background-color: bisque;
+       text-align: center;
+       color: brown;
+       font-size: 50px;
+       border-radius: 30px;
+       padding: 30px;
+       border: 2px solid aqua ;
+   }
+   #ADD, #cal ,#Reset {
+       background-color: bisque;
+       text-align: center;
+       color: brown;
+       font-size: 24px;
+       border-radius: 30px;
+       padding: 20px;
+       border: 2px solid aqua ;
+   }
