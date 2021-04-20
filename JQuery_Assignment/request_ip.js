@@ -1,7 +1,8 @@
 var ip;
 var tbl;
+var flag = 0;
 var btn = `<button id="del">Delete</button>`;
-var table= $("#example").DataTable(
+var table = $("#example").DataTable(
     {
         columns: [
             {title: "IP Address"},
@@ -10,6 +11,23 @@ var table= $("#example").DataTable(
             {title: "Event" }
         ]
     });
+    if(Notification.permission == "granted"){
+        flag = 1;
+    }
+    else if(Notification.permission !== "denied"){
+        Notification.requestPermission().then(permission => {
+            if(permission == "granted"){
+                flag = 1;
+            }
+        });
+    }
+    function notify(){
+        const notification = new Notification("New Message!", {
+            body: "Row has been deleted successfully"
+        });
+    }
+
+
 $(document).ready(function() {
     $('#example tbody').on( 'click', 'tr', function () {
         if ( $(this).hasClass('selected') ) {
@@ -23,10 +41,20 @@ $(document).ready(function() {
     $('#example').on("click", "#del" ,function () {
 
         table.row('.selected').remove().draw( false );
+        if(flag == 1)
+        {
+            notify();
+        }
+        
     });
     
     $('#button').click( function () {
         table.row('.selected').remove().draw( false );
+        if(flag == 1)
+        {
+            notify();
+        }
+        
     } );    
 } );
 function add()
