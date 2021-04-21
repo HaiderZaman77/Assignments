@@ -71,7 +71,7 @@ function Blocks(elements) {
 
     if (tempImgShow == null) {
         tempImgShow = clicked.src;
-        tempImgShow = elements.id;
+        tempIdShow = elements.id;
 
     }
     else if (tempImgShow != null) {
@@ -82,7 +82,7 @@ function Blocks(elements) {
             clicked.style.visibility = "hidden";
 
         }
-        else if (tempVisibleImgPath == clicked.src && tempVisibleDivId != elements.id) {
+        else if (tempImgShow == clicked.src && tempIdShow != elements.id) {
             tempIdShow = null;
             tempImgShow = null;
             if (checkComplete()) {
@@ -92,5 +92,15 @@ function Blocks(elements) {
 
         }
     }
+}
+
+function checkComplete() {
+    for (let i = 0; i < 8; i++) {
+
+        if (document.getElementById("img" + i).style.visibility == "hidden") {
+            return false;
+        }
+    }
+    return true;
 }
 
