@@ -1,0 +1,154 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #333;
+    position: absolute;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover:not(.activeLink) {
+    background-color: #111;
+}
+  
+.activeLink {
+    background-color: #4CAF50;
+}
+li:visited{
+      background-color: yellow;
+}
+  .carousel-inner > .item {
+    height: 800px;
+}
+h3 {
+     font-size:x-large;
+     font-weight: bold;
+
+}
+/*.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-right: 10px;
+    align-items: center;
+    display: grid;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+*/  
+.container1 {
+    padding: 2px 16px;
+}
+#myfriend {
+      margin-top: 80px;
+      margin-right: 10px;
+}
+  p,h4,h5, figure{
+      margin: 0;
+}
+body{
+    background-color: #d8d8d8;
+}
+img{
+    max-width: 100%;
+    width: 400px;
+    height: 280px;
+    
+} 
+h4{
+    font:500 30px/40px;
+    color: #111;
+    letter-spacing: 1px;
+    margin: 10px 0;
+} 
+h5{
+    margin-bottom: 20px;
+}
+.post{
+    box-shadow: 5px 5px 5px #888,
+                -5px -5px 5px #efefef;
+                transform: scale(0.95);
+                transition: all 0.4s ease-in-out;
+                width: 300px;
+                height: 400px;
+}
+.post:hover{
+    transform: translate(-5px, -5px);
+    box-shadow: 15px 15px 15px #4CAF50;
+}
+.content{
+    position: relative;
+    padding: 0 20px 20px;
+    
+}
+.content::after{
+    position: absolute;
+    content: "";
+    
+    width: 100%;
+   
+}
+p {
+    margin-top: 40px;
+    font-size: x-large;
+    line-break: normal;
+    word-break: break-all;
+}
+#map{
+
+    margin-top: 250px;
+    margin-right: 100px;
+    margin-left: 100px;
+    height: 600px;
+    width: 1500px;
+}
+.container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.heading{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+}
+#mH1{
+    text-align: center;
+    font-size: xx-large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: #4CAF50;
+}
+.box {
+    display: none;
+    width: 100%;
+}
+a:hover+.box,
+.box:hover {
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+a:hover+.box1,
+.box1:hover {
+    display: block;
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+}
+#p1{
+    word-break: normal;
+}
